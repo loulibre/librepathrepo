@@ -7,7 +7,7 @@ The LibrePath Monorepo Blueprint is a comprehensive guide to setting up a unifie
 
 First: **Initialize the LibrePath Workspace with NX workspace for monorepos:**
 
-Clone or fork the LibrePath monorepo from:
+1. Clone or fork the LibrePath monorepo from:
 https://github.com/loulibre/librepathrepo
 
 This will provide you with the complete NX monorepo workspace setup.
@@ -20,7 +20,7 @@ This will provide you with the complete NX monorepo workspace setup.
      ```
    - Confirm that the project contains the `apps/`, `ui/`, and `libs/` folders.
 
-1. **Establish the Folder Structure:**
+2. **Establish the Folder Structure:**
    - Create the following key directories:
      - `apps/archives`, `apps/aichat`, `apps/dash`
        - Under each, add subfolders: `web`, `mobile`, and `e2e` (if needed).
