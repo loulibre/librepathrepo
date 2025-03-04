@@ -2,46 +2,73 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Getting Started with LibrePath
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to the LibrePath development documentation. This guide will help you set up and work with the LibrePath monorepo.
 
-## Getting Started
+## Prerequisites
 
-Get started by **creating a new site**.
+Before you begin, ensure you have:
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+- [Node.js](https://nodejs.org/en/download/) version 18.0 or above
+- [Yarn](https://yarnpkg.com/) package manager
+- [Git](https://git-scm.com/) for version control
 
-### What you'll need
+## Initial Setup
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
+1. Clone the repository:
 
 ```bash
-npm init docusaurus@latest my-website classic
+git clone https://github.com/loulibre/librepathrepo.git
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
+2. Install dependencies:
 
 ```bash
-cd my-website
-npm run start
+yarn install
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+## Development Commands
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+### Web Development
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Start the web application development server:
+
+```bash
+nx serve web
+```
+
+### Mobile Development
+
+Start a mobile application:
+
+```bash
+cd apps/[app-name]/mobile
+yarn start
+```
+
+### Documentation Development
+
+Work on the documentation site:
+
+```bash
+cd apps/dash/docs
+yarn start
+```
+
+## Project Structure
+
+- `apps/` - Application-specific code
+  - `web/` - Main web application
+  - `mobile/` - Mobile applications
+  - `docs/` - Documentation site
+- `ui/` - Shared UI resources
+  - `components/` - Reusable UI components
+  - `design/` - Design tokens and assets
+  - `styles/` - Shared styles
+
+## Additional Resources
+
+- [Project Overview](./project-overview.md)
+- [GitHub Repository](https://github.com/loulibre/librepathrepo)
+- [Development Guidelines](./project-overview.md#development-guidelines)

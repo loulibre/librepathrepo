@@ -43,7 +43,6 @@ const config: Config = {
             xslt: true,
           },
           // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/loulibre/librepathrepo/tree/main/apps/dash/docs/',
           // Useful options to enforce blogging best practices
@@ -62,9 +61,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'LibrePath',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'LibrePath Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -72,11 +71,11 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docs',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/librepath/librepathrepo',
+          href: 'https://github.com/loulibre/librepathrepo',
           label: 'GitHub',
           position: 'right',
         },
@@ -89,7 +88,7 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Docs',
               to: '/docs/intro',
             },
           ],
@@ -120,7 +119,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/librepath/librepathrepo',
+              href: 'https://github.com/loulibre/librepathrepo',
             },
           ],
         },
