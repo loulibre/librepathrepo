@@ -57,13 +57,12 @@
         }
       }
     },
-    "lint": {
-      "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+    "docs": {
+      "executor": "nx:run-commands",
       "options": {
-        "lintFilePatterns": ["apps/web/**/*.{ts,tsx,js,jsx}"]
+        "command": "cd apps/dash/docs && npm run build",
+        "outputPath": "dist/apps/dash/docs"
       }
     }
-  },
-  "tags": []
+  }
 }
