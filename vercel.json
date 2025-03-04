@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "framework": "next",
     "builds": [
       {
         "src": "apps/web/next.config.js",
@@ -12,8 +13,12 @@
         "dest": "/apps/web/$1"
       }
     ],
-    "framework": "nextjs",
-    "buildCommand": "pnpm run build",
+    "buildCommand": "pnpm run vercel-build",
     "installCommand": "pnpm install",
-    "outputDirectory": "apps/web/.next"
+    "outputDirectory": "apps/web/.next",
+    "functions": {
+      "api/**/*.ts": {
+        "runtime": "nodejs18.x"
+      }
+    }
   }
