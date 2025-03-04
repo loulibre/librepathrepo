@@ -5,6 +5,15 @@ node_modules/
 yarn-debug.log*
 yarn-error.log*
 
+# Platform-specific binaries and large files
+*.node
+*.wasm
+*.dll
+*.so
+*.dylib
+*.exe
+*.bundle
+
 # Yarn 2+
 .yarn/*
 !.yarn/patches
