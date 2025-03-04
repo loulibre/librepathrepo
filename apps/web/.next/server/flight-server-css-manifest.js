@@ -1,0 +1,12 @@
+self.__RSC_CSS_MANIFEST={
+  "cssImports": {
+    "/Users/jetstart/dev/libre/librepathrepo/apps/web/app/layout.tsx": [
+      "/Users/jetstart/dev/libre/librepathrepo/apps/web/app/global.css"
+    ]
+  },
+  "cssModules": {
+    "/Users/jetstart/dev/libre/librepathrepo/apps/web/app/page": [
+      "/Users/jetstart/dev/libre/librepathrepo/apps/web/app/global.css"
+    ]
+  }
+}
