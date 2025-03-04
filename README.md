@@ -16,7 +16,7 @@ This will provide you with the complete NX monorepo workspace setup.
 
    - If not already initialized by the starter, run:
      ```bash
-     npx create-nx-workspace@latest librepath-monorepo --preset=next --packageManager=yarn
+     npx create-nx-workspace@latest librepath-monorepo --preset=next --packageManager=pnpm
      ```
    - Confirm that the project contains the `apps/`, `ui/`, and `libs/` folders.
 
