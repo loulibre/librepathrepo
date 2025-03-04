@@ -26,6 +26,7 @@ This will provide you with the complete NX monorepo workspace setup.
        - Under each, add subfolders: `web`, `mobile`, and `e2e` (if needed).
      - Create a central `ui/` folder with subfolders: `design/`, `styles/`, `components/`, and `libs/storybook`.
 
+```
 LibrePath-monorepo/
 ├── apps/
 │   ├── archives/       # Archives App
@@ -50,6 +51,7 @@ LibrePath-monorepo/
 ├── libs/              # (Optional) Other shared libraries across the monorepo
 ├── prompt.md          # Blueprint prompt for LibrePath Monorepo
 └── readme.md          # Instructions on initializing and working with the project
+```
 
 3. **Set Up Docusaurus Documentation:**
    - Initialize Docusaurus in the dash/docs directory:
