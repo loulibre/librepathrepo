@@ -28,28 +28,28 @@ This will provide you with the complete NX monorepo workspace setup.
 
 LibrePath-monorepo/
 ├── apps/
-│   ├── archives/
-│   │   ├── web/         # Next.js app for Archives
-│   │   ├── mobile/      # React Native (with NativeWind) project for Archives
-│   │   └── e2e/         # (Optional) End-to-end tests for Archives
-│   ├── aichat/
-│   │   ├── web/         # Next.js app for AIChat
-│   │   ├── mobile/      # React Native (with NativeWind) project for AIChat
-│   │   └── e2e/         # (Optional) End-to-end tests for AIChat
-│   └── dash/
-│       ├── web/         # Next.js Dashboard app for web
-│       ├── mobile/      # React Native (with NativeWind) project for Dashboard
-│       ├── docs/        # Docusaurus site for LibrePath Docs (documentation)
-│       └── e2e/         # (Optional) End-to-end tests for Dashboard
+│   ├── archives/       # Archives App
+│   │   ├── web/       # Next.js app for Archives
+│   │   ├── mobile/    # React Native (with NativeWind) project for Archives
+│   │   └── e2e/       # (Optional) End-to-end tests for Archives
+│   ├── aichat/        # AIChat App
+│   │   ├── web/       # Next.js app for AIChat
+│   │   ├── mobile/    # React Native (with NativeWind) project for AIChat
+│   │   └── e2e/       # (Optional) End-to-end tests for AIChat
+│   └── dash/          # Dashboard App
+│       ├── web/       # Next.js Dashboard app for web
+│       ├── mobile/    # React Native (with NativeWind) project for Dashboard
+│       ├── docs/      # Docusaurus site for LibrePath Docs
+│       └── e2e/       # (Optional) End-to-end tests for Dashboard
 ├── ui/
-│   ├── design/          # Shared design tokens (colors, spacing, fonts, etc.)
-│   ├── styles/          # Global Tailwind CSS and shadcn-react configurations
-│   ├── components/      # Shared UI components (built with shadcn) using NX libraries
+│   ├── design/        # Shared design tokens (colors, spacing, fonts, etc.)
+│   ├── styles/        # Global Tailwind CSS and shadcn-react configurations
+│   ├── components/    # Shared UI components (built with shadcn) using NX libraries
 │   └── libs/
-│       └── storybook/   # NX library for Storybook integration (component docs/testing)
-├── libs/                # (Optional) Other shared libraries across the monorepo
-├── prompt.md            # This file: full blueprint prompt for LibrePath Monorepo
-└── readme.md            # Instructions on initializing and working with the project
+│       └── storybook/ # NX library for Storybook integration (component docs/testing)
+├── libs/              # (Optional) Other shared libraries across the monorepo
+├── prompt.md          # Blueprint prompt for LibrePath Monorepo
+└── readme.md          # Instructions on initializing and working with the project
 
 3. **Set Up Docusaurus Documentation:**
    - Initialize Docusaurus in the dash/docs directory:
