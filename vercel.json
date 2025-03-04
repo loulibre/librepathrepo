@@ -1,5 +1,19 @@
 {
-  "buildCommand": "pnpm run build",
-  "installCommand": "pnpm install",
-  "framework": "nextjs"
-}
+    "version": 2,
+    "builds": [
+      {
+        "src": "apps/web/next.config.js",
+        "use": "@vercel/next"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/apps/web/$1"
+      }
+    ],
+    "framework": "nextjs",
+    "buildCommand": "pnpm run build",
+    "installCommand": "pnpm install",
+    "outputDirectory": "apps/web/.next"
+  }
