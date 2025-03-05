@@ -53,7 +53,7 @@ export default function Index() {
           <h1 className="text-6xl font-bold mb-6">LibrePath AI</h1>
           <p className="text-2xl mb-12">Your Path to Private AI Productivity</p>
           <Link
-            href="/docs/docs/intro"
+            href="/docs/intro"
             className="bg-white text-blue-500 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors inline-block"
           >
             Get Started with LibrePath

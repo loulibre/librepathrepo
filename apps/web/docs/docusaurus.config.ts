@@ -10,8 +10,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'http://localhost:3000',
-  // Set the /<baseUrl>/ pathname under which your site is served
+  url: 'http://localhost:4200',
   baseUrl: '/docs/',
 
   // GitHub pages deployment config.

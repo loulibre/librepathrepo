@@ -13,7 +13,7 @@ const nextConfig = {
   rewrites: async () => [
     {
       source: '/docs/:path*',
-      destination: '/docs/_docusaurus/:path*',
+      destination: 'http://localhost:4200/docs/:path*',
     },
   ],
   // Configure static file serving for Docusaurus assets

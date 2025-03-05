@@ -1,7 +1,12 @@
 {
     "version": 2,
-    "framework": "nextjs",
-    "buildCommand": "pnpm nx build web",
+    "buildCommand": "pnpm nx build web && cd apps/web/docs && pnpm install && pnpm build",
     "installCommand": "pnpm install",
-    "outputDirectory": "dist/apps/web/.next"
+    "outputDirectory": "dist/apps/web",
+    "rewrites": [
+      {
+        "source": "/docs/:path*",
+        "destination": "/apps/web/docs/build/:path*"
+      }
+    ]
   }
