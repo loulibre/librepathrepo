@@ -27,21 +27,25 @@ This will provide you with the complete NX monorepo workspace setup.
      - Create a central `ui/` folder with subfolders: `design/`, `styles/`, `components/`, and `libs/storybook`.
 
 ```
-LibrePath-monorepo/
+LibrePath-repo/  (multiple app workspaces in a monorepo)
 ├── apps/
+for AIChat App (AI Agents) 
+│   └── aichat/        # AI Chat Agent App
+│       ├── web/       # Next.js Dashboard app for AI web project
+│       ├── mobile/    # React Native (NativeWind) AI mobile apps 
+│       └── e2e/       # (Optional) End-to-end tests for AIChat
+for Archives App (.zip, files, PDFs, images, etc)
 │   ├── archives/       # Archives App
-│   │   ├── web/       # Next.js app for Archives
-│   │   ├── mobile/    # React Native (with NativeWind) project for Archives
+│   │   ├── web/       # Next.js app for Archives project
+│   │   ├── mobile/    # React Native (with NativeWind) Archives mobile apps 
 │   │   └── e2e/       # (Optional) End-to-end tests for Archives
-│   ├── aichat/        # AIChat App
-│   │   ├── web/       # Next.js app for AIChat
-│   │   ├── mobile/    # React Native (with NativeWind) project for AIChat
-│   │   └── e2e/       # (Optional) End-to-end tests for AIChat
-│   └── dash/          # Dashboard App
-│       ├── web/       # Next.js Dashboard app for web
-│       ├── mobile/    # React Native (with NativeWind) project for Dashboard
-│       ├── docs/      # Docusaurus site for LibrePath Docs
+for Dashboard App (Productivity Dashboard) 
+│   ├── dash/          # Productivity Dashboard App
+│   │   ├── web/       # Next.js app for Dashboard web project
+│   │   ├── mobile/    # React Native (with NativeWind) Dashboard mobile apps
+│       ├── docs/      # Docusaurus site for LibrePath Docs (Docusaurus project)
 │       └── e2e/       # (Optional) End-to-end tests for Dashboard
+for central design, styles, and components across all apps
 ├── ui/
 │   ├── design/        # Shared design tokens (colors, spacing, fonts, etc.)
 │   ├── styles/        # Global Tailwind CSS and shadcn-react configurations
